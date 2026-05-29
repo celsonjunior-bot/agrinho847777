@@ -1,0 +1,110 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4; /* Verde bem claro de fundo */
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1b4d3e; /* Verde musgo escuro */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff9f1c; /* Laranja interativo */
+}
+
+/* Banner Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center/cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Botões e Animações */
+.btn-animado {
+    background-color: #ff9f1c;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 159, 28, 0.4);
+}
+
+/* Animação Hover (passar o mouse) */
+.btn-animado:hover {
+    background-color: #e08600;
+    transform: translateY(-3px); /* Efeito de flutuar */
+    box-shadow: 0 6px 20px rgba(255, 159, 28, 0.6);
+}
+
+.btn-animado:active {
+    transform: translateY(1px);
+}
+
+/* Seções de Conteúdo */
+.conteudo {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-tempo-real {
+    background-color: white;
+    border-left: 5px solid #2a9d8f;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+#contador {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2a9d8f;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1b4d3e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
